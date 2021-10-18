@@ -5,27 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">   
     <link rel="stylesheet" href="./styles/style.css">
-    
+    <script src="./JavaScript/time.js" defer></script>
+    <script src="./JavaScript/info.js" defer></script>
 
     <title>Sebastian Gómez Cifuentes</title>
 </head>
 <body onload="onLoad()">
     <header class="header">
         <nav class="nav-container">
-            <div class="headerTitle"><h1> Sebastain Gómez.</h1></div>
+            <div class="nav-selector headerTitle">  <h1><a class="headerTitle__a">Sebastain Gómez. </a></h1></div>
             <div class="list"> 
                  <ul class="mainUl">
-                <li><a href="">About me</a></li>
+                <li class="nav-selector"><a>About me</a></li>
                 <li><a href="https://drive.google.com/file/d/1UJ55bEzYi6f9yWbmAaxfdsadRwnhZHh1/view?usp=sharing" target="_blank" > Resume</a></li>
-                <li><a href="">Skills</a></li>
-                <li><a href="">Contact </a> 
-                 <a href="">
+                <li class="nav-selector"><a>Skills</a></li>
+                <li><a >Contact </a> 
+                 <a >
                      <ul class="socialMediaUl">
-                         <li><a href="https://www.linkedin.com/in/sebastian-g%C3%B3mez-cifuentes-521240171/" target="_blank"><img src="./sources/img/linkedin.png" alt="linkedin"></a></li>
+                         <li><a href="https://www.linkedin.com/in/sebastian-g%C3%B3mez-cifuentes-521240171/" target="_blank"><img src="./sources/img/linkedin.png"  alt="linkedin" aria-hidden="true"></a></li>
                          <li><a href="https://github.com/kanmus7" target="_blank"><img src="./sources/img/github.png" alt="github"></a></li>
-                         <li><a href="https://www.frontendmentor.io/profile/kanmus7" target="_blank"><img src="./sources/img/frontendmentor.png" alt="frontendmentor"></a></li>
-                         <li><a href="https://www.facebook.com/SGCKanmus/" target="_blank"><img src="./sources/img/facebook.png" alt="facebook"></a></li>
-                         <li><a href="https://wa.me/+57 3147586030" target="_blank"><img src="./sources/img/whatsapp.png" alt="whatsapp"></a></li>
+                         <li><a href="https://www.frontendmentor.io/profile/kanmus7" target="_blank"><img src="./sources/img/frontendmentor.png"  alt="frontendmentor" aria-hidden="true"></a></li>
+                         <li><a href="https://www.facebook.com/SGCKanmus/" target="_blank"><img src="./sources/img/facebook.png"  alt="facebook" aria-hidden="true"></a></li>
+                         <li><a href="https://wa.me/+57 3147586030" target="_blank"><img src="./sources/img/whatsapp.png"  alt="whatsapp" aria-hidden="true"></a></li>
                      </ul>
                  </a>
                 </li>
@@ -33,7 +34,7 @@
           
         </nav>
     </header>
-    <main class="main-container"> 
+    <main class="main-container" id="main-container"> 
         <div class="time">         
             <div id="location" class="time-element"> </div>
             <div id="description" class="time-element"></div>
@@ -43,18 +44,23 @@
             <div id="date" class="time-element"></div>            
         </div>       
         <hr>
-        <div class="mainTitle">
-            <p class="name">Sebastian Gómez Cifuentes</p>   
-            <p class="prof">Frontend Developer</p>         
+        <div class="main-container__content">
+            <div class="main-container__title">
+                <p class="name">Sebastian Gómez Cifuentes</p>   
+                <p class="prof">Frontend Developer</p>   
+            </div>
+            <div id="main-container-text" class="main-container__text active">                
+              <p id="main-container-text__p"></p>      
+            </div>                  
         </div>        
         <hr>
-        <div class="btn">
+        <!-- <div class="btn">
             <button type="button">About</button>
             <button type="button">Porfolio</button>
             <button type="button">Contact</button>
-        </div>        
+        </div>    -->  
         <div id="hour" class="time-hour"></div>
     </main>    
-    <script src="./JavaScript/time.js" defer></script>
+    
 </body>
 </html>
