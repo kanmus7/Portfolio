@@ -7,6 +7,9 @@ const fetchData = position =>{
     .then(data => setWeatherData(data))
   }
 
+
+
+
 const setWeatherData = data =>{
     const apiData ={
         location: data.name,

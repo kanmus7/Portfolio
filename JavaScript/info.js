@@ -1,5 +1,6 @@
 const msj = "Hi!, my name is Sebastian Gómez and  i'm currently 26 years old.I'm studying Web development and Social Siencies.I really like reading, video games, chess, training my body, listening to music, sharing conversations and thoughts with my family and friends, etc.      I am very interested in relevant social problems such as discrimination, the society of control, fascism or neo fascism, and among other current ethical and moral issues."
 const navOptions = document.querySelectorAll(".nav-selector")
+
 const skillInfo = {
     javaScript: "https://img.icons8.com/color/48/000000/javascript.png",
     html5: "https://img.icons8.com/color/48/000000/html-5.png",
@@ -30,3 +31,10 @@ const establishInfo = (index) =>{
     case 2: return info =  skillInfo.showInfo();      
    }
 }
+
+
+if (window.matchMedia("(max-width:780px)").matches) {
+    const body = document.querySelectorAll("body")
+    /* Llamar al elemento que despliega el parrafo, el aboun */
+
+  }
