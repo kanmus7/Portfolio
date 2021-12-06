@@ -95,6 +95,7 @@ body{
     @include height(100%);
     @include displayFlex;
     @include maxHeight(80px);
+    position: relative;
 }
 
 .nav-container{
@@ -104,7 +105,7 @@ body{
     @include padding(1rem 0);
     @include background-color(rgba(0, 0, 0, 0.5));
     border-color: rgba(0, 0, 0, 0.6);
-    @include position(fixed);
+    @include position(absolute);
     right: 0;
     left: 0;
     border-width: 0 0 1px;
@@ -113,7 +114,7 @@ body{
     letter-spacing: 1px;
     color: white;
     @include height(100%);
-    @include maxHeight(5rem);
+    min-height: 80px;
 }
 
 .headerTitle{
@@ -165,6 +166,13 @@ a{
     @include background-color(rgba(29, 28, 28, 0.3));
 }
 
+.imgYo{
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 1rem;
+}
 
 .mainUl li>a:hover{
     color: rgb(0, 0, 0);
@@ -189,15 +197,14 @@ a{
     @include height(40px);       
     }
 
+    .skillimg{
+        @include margin(0 1rem);
+    }
   .main-container{
-    @include displayFlex;
-    @include flexDirection(column);
-    @include alingItems(center);
-    @include justifyContent(center);
+    display: block;
     @include width(100%);
     @include height(100%);
     @include fontWeight(300);
-    @include maxHeight(55rem);
     @include padding(20px);
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
     text-align: center;
@@ -205,9 +212,15 @@ a{
     color: #ffffff; 
 }
 
+#main-container-text__p{
+    font-size: large
+}
+
 .time{
     @include displayFlex;
-    padding-top: 5rem;
+    padding-top: 5rem;    
+    justify-content: center;
+    align-items: center;
 }
 
 .time-element{
@@ -234,6 +247,9 @@ a{
 
 .main-container__text{  
     padding-top: 2rem;
+    @include displayFlex;
+    @include justifyContent(center);
+    @include alingItems(center);
 }
 
 .main-container__text p{
@@ -242,7 +258,7 @@ a{
 }
 
 hr{
-    @include margin(1rem 0);
+    @include margin(auto);
     @include width(100%);
     @include maxWidth(70rem);
     @include height(0);
@@ -257,9 +273,8 @@ hr{
   
 
   .time-hour{
-    padding-top: 10rem;
-    @include fontSize(70px);
-    @include margin(0);
+    @include fontSize(30px);
+    @include margin(1rem 0);
     letter-spacing: 3px;
   }
 
@@ -287,6 +302,11 @@ hr{
     }
     .list{
         margin-top: 0;
+    }
+    .imgYo{
+       margin-top: 1rem;
+       max-width: 220px;
+       max-height: 220px;
     }
 
     .contact{
@@ -323,7 +343,7 @@ hr{
         @include flexDirection(column);
         @include justifyContent(center);
         @include alingItems(center);
-    }
+        }
 
     .main-container__content p{
         @include padding(0);
@@ -339,7 +359,7 @@ hr{
     }
 
     .main-container__text{
-        @include padding(2rem);
+        @include padding(2rem);       
     }
 
     .contact-container{

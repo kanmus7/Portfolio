@@ -36,6 +36,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   max-height: 80px;
+  position: relative;
 }
 
 .nav-container {
@@ -48,7 +49,7 @@ body {
   padding: 1rem 0;
   background-color: rgba(0, 0, 0, 0.5);
   border-color: rgba(0, 0, 0, 0.6);
-  position: fixed;
+  position: absolute;
   right: 0;
   left: 0;
   border-width: 0 0 1px;
@@ -57,7 +58,7 @@ body {
   letter-spacing: 1px;
   color: white;
   height: 100%;
-  max-height: 5rem;
+  min-height: 80px;
 }
 
 .headerTitle {
@@ -110,6 +111,14 @@ a {
   background-color: rgba(29, 28, 28, 0.3);
 }
 
+.imgYo {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
 .mainUl li > a:hover {
   color: black;
   background-color: #d1cccc83;
@@ -133,24 +142,15 @@ a {
   height: 40px;
 }
 
+.skillimg {
+  margin: 0 1rem;
+}
+
 .main-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: block;
   width: 100%;
   height: 100%;
   font-weight: 300;
-  max-height: 55rem;
   padding: 20px;
   font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
   text-align: center;
@@ -158,11 +158,21 @@ a {
   color: #ffffff;
 }
 
+#main-container-text__p {
+  font-size: large;
+}
+
 .time {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-top: 5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .time-element {
@@ -188,6 +198,15 @@ a {
 
 .main-container__text {
   padding-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main-container__text p {
@@ -196,7 +215,7 @@ a {
 }
 
 hr {
-  margin: 1rem 0;
+  margin: auto;
   width: 100%;
   max-width: 70rem;
   height: 0;
@@ -209,9 +228,8 @@ hr {
 }
 
 .time-hour {
-  padding-top: 10rem;
-  font-size: 70px;
-  margin: 0;
+  font-size: 30px;
+  margin: 1rem 0;
   letter-spacing: 3px;
 }
 
@@ -244,6 +262,11 @@ hr {
   }
   .list {
     margin-top: 0;
+  }
+  .imgYo {
+    margin-top: 1rem;
+    max-width: 220px;
+    max-height: 220px;
   }
   .contact {
     display: none;
