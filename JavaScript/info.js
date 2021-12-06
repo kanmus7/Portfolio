@@ -1,4 +1,4 @@
-const msj = "Hi!, my name is Sebastian Gómez and  i'm currently 26 years old.I'm studying Web development and Social Siencies.I really like reading, video games, chess, training my body, listening to music, sharing conversations and thoughts with my family and friends, etc.      I am very interested in relevant social problems such as discrimination, the society of control, fascism or neo fascism, and among other current ethical and moral issues."
+const msj = "Hello, my name is Sebastian, I'm a social science student with experience in application development with mycrosoft Dynamics 365, C# and javaScript. I also have knowledge in web development, handling technologies such as html5, css3, javascript, react and sass. I also have basic knowledge about express js. I'm looking for an opportunity to apply the knowledge acquired in order to benefit your organization while developing myself professionally."
 const navOptions = document.querySelectorAll(".nav-selector")
 
 const skillInfo = {
