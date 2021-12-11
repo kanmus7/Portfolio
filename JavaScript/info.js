@@ -1,8 +1,7 @@
-const msj = "Hello, my name is Sebastian, I'm a social science student with experience in application development with mycrosoft Dynamics 365, C# and javaScript. I also have knowledge in web development, handling technologies such as html5, css3, javascript, react and sass. I also have basic knowledge about express js. I'm looking for an opportunity to apply the knowledge acquired in order to benefit your organization while developing myself professionally."
+const msj = "Hello, my name is Sebastian. I'm a social science student with experience in application development with Microsoft Dynamics 365, C#, and JavaScript. I also have experience with web development, including HTML5, CSS3, Javascript, React, and Sass.I also have basic knowledge of Express JS. I'm looking for an opportunity to apply the knowledge acquired in order to benefit your organization while developing myself professionally."
 const navOptions = document.querySelectorAll(".nav-selector")
-
 const skillInfo = {
-    
+
     javaScript: "https://img.icons8.com/color/48/000000/javascript.png",
     html5: "https://img.icons8.com/color/48/000000/html-5.png",
     git: "https://img.icons8.com/color/48/000000/git.png",
@@ -27,6 +26,7 @@ const skillInfo = {
 
 const aboutInfo = `<p id="main-container-text__p " style=" line-height:2; word-spacing:3px;"> ${msj} </p>`
 
+document.getElementById("main-container-text__p").innerHTML = skillInfo.showInfo()
 navOptions.forEach((option, index) => {
     option.addEventListener("click", function () {
         var info = establishInfo(index)
@@ -41,11 +41,4 @@ const establishInfo = (index) => {
         case 1: return info = aboutInfo;
         case 2: return info = skillInfo.showInfo();
     }
-}
-
-
-if (window.matchMedia("(max-width:780px)").matches) {
-    const body = document.querySelectorAll("body")
-    /* Llamar al elemento que despliega el parrafo, el aboun */
-
 }

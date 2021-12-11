@@ -176,7 +176,7 @@ a{
 
 .mainUl li>a:hover{
     color: rgb(0, 0, 0);
-    @include background-color(#d1cccc83);
+    @include background-color(#d1cccc41);
   }
 
   .mainUl>li{
@@ -193,8 +193,10 @@ a{
   }
 
   .socialMediaUl>li>a>img{ 
-    @include width(40px);
-    @include height(40px);       
+    @include width(55px);
+    @include height(55px);   
+    @include borderRadius(50%);
+    @include padding(0.5rem);    
     }
 
     .skillimg{
